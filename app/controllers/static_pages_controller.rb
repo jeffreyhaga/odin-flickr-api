@@ -8,7 +8,8 @@ def index
   # Initialize your Flickr client with the credentials
   flickr = Flickr.new(flickr_api_key, flickr_shared_secret)
 
-  user_id = params[:user_id]
+  default_user_id = '199702536@N02'
+  user_id = params[:user_id] || default_user_id
 
   @photos = flickr.people.getPhotos(user_id: user_id)
 

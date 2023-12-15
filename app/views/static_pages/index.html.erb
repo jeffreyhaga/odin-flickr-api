@@ -16,12 +16,13 @@
 <%= Rails.application.credentials.dig(:api_key) %>
 <%= Rails.application.credentials.dig(:secret_key) %>
 
-<% @photos.each do |photo| %>
-  <div>
-    <h3><%= photo.title %></h3>
-    <% photo_url = "https://farm#{photo.farm}.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg" %>
-    <img src="<%= photo_url %>" alt="<%= photo.title %>">
-  </div>
+ <% @photos.each do |photo| %>
+    <div>
+        <h3><%= photo.title %></h3>
+        <% photo_url = "https://farm#{photo.farm}.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg" %>
+        <img src="<%= photo_url %>" alt="<%= photo.title %>">
+    </div>
 <% end %>
+
 
 

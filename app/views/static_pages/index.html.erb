@@ -1,7 +1,27 @@
 <h1>StaticPages#index</h1>
 
-<%= form_with url: "/search", method: :get do |form| %>
-    <%= form.label :flickr_id, "Flickr ID" %>
-    <%= form.text_field :flickr_id %>
+<p>put in your Flickr ID below to see your recent photos</p>
+<p>Examples:</p>
+<ul>
+    <li>131139857@N05</li>
+    <li>jacoboson</li>
+    <li>199702536@N02</li>
+</ul>
+<%= form_with url: root_path, method: :get do |form| %>
+    <%= form.label :user_id, "Flickr ID" %>
+    <%= form.text_field :user_id %>
     <%= form.submit "Search" %>
 <% end %>
+
+<%= Rails.application.credentials.dig(:api_key) %>
+<%= Rails.application.credentials.dig(:secret_key) %>
+
+<% @photos.each do |photo| %>
+  <div>
+    <h3><%= photo.title %></h3>
+    <% photo_url = "https://farm#{photo.farm}.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg" %>
+    <img src="<%= photo_url %>" alt="<%= photo.title %>">
+  </div>
+<% end %>
+
+

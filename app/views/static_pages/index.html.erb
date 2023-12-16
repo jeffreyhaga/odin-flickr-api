@@ -1,12 +1,22 @@
 <h1>StaticPages#index</h1>
+<div data-controller="hello">
+    <input id="color" name="color" type="checkbox" data-action='hello#color' />
+    <label for="color">Highlight Instructions</label>
 
-<p>put in your Flickr ID below to see your recent photos</p>
-<p>Examples:</p>
-<ul>
-    <li>131139857@N05</li>
-    <li>jacoboson</li>
-    <li>199702536@N02</li>
-</ul>
+    <div>
+        <p data-hello-target="output">put in your Flickr ID below to see your recent photos</p>
+        <p>Examples:</p>
+        <ul>
+            <li>131139857@N05</li>
+            <li>jacoboson</li>
+            <li>199702536@N02</li>
+        </ul>
+    </div>
+    <button data-action='hello#hide' data-hello-target='hide'>Hide Instructions</button>
+    <button data-action='hello#show' data-hello-target='show' hidden>Show Instructions</button>
+</div>
+
+
 <%= form_with url: root_path, method: :get do |form| %>
     <%= form.label :user_id, "Flickr ID" %>
     <%= form.text_field :user_id %>

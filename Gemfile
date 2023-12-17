@@ -67,3 +67,5 @@ group :test do
 end
 
 gem 'flickr'
+
+gem "dockerfile-rails", ">= 1.5", :group => :development

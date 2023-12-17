@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 
 def index
-  # Use Rails credentials to securely fetch your API key and secret
+  # Use Rails credentials to securely fetch your API key and secret.
   flickr_api_key = Rails.application.credentials.flickr[:api_key]
   flickr_shared_secret = Rails.application.credentials.flickr[:secret_key]
 

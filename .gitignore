@@ -36,3 +36,5 @@
 
 #Ignore Figaro application yml file
 /application.yml
+
+/config/credentials/production.key

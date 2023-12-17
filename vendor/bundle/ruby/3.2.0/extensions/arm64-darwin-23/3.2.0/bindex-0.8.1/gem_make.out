@@ -1,0 +1,19 @@
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/jeffhaga/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20231216-81029-9xn4i6 sitelibdir\=./.gem.20231216-81029-9xn4i6 clean
+
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20231216-81029-9xn4i6 sitelibdir\=./.gem.20231216-81029-9xn4i6
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20231216-81029-9xn4i6 sitelibdir\=./.gem.20231216-81029-9xn4i6 install
+/opt/homebrew/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20231216-81029-9xn4i6/skiptrace/internal
+
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20231216-81029-9xn4i6 sitelibdir\=./.gem.20231216-81029-9xn4i6 clean

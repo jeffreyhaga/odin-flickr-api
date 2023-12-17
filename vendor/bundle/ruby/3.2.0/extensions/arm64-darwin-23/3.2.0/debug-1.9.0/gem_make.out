@@ -1,0 +1,20 @@
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/debug-1.9.0/ext/debug
+/Users/jeffhaga/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/debug-1.9.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20231216-81029-h4nl8c sitelibdir\=./.gem.20231216-81029-h4nl8c clean
+
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/debug-1.9.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20231216-81029-h4nl8c sitelibdir\=./.gem.20231216-81029-h4nl8c
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/debug-1.9.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20231216-81029-h4nl8c sitelibdir\=./.gem.20231216-81029-h4nl8c install
+/opt/homebrew/bin/ginstall -c -m 0755 debug.bundle ./.gem.20231216-81029-h4nl8c/debug
+
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/debug-1.9.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20231216-81029-h4nl8c sitelibdir\=./.gem.20231216-81029-h4nl8c clean

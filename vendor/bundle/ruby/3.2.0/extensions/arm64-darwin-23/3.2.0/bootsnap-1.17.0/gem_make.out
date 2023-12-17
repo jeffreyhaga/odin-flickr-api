@@ -1,0 +1,23 @@
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.0/ext/bootsnap
+/Users/jeffhaga/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20231216-81029-iwq9ia sitelibdir\=./.gem.20231216-81029-iwq9ia clean
+
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20231216-81029-iwq9ia sitelibdir\=./.gem.20231216-81029-iwq9ia
+compiling bootsnap.c
+bootsnap.c:822:10: warning: unused variable 'contents' [-Wunused-variable]
+  char * contents = NULL;
+         ^
+1 warning generated.
+linking shared-object bootsnap/bootsnap.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20231216-81029-iwq9ia sitelibdir\=./.gem.20231216-81029-iwq9ia install
+/opt/homebrew/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20231216-81029-iwq9ia/bootsnap
+
+current directory: /Users/jeffhaga/Documents/Coding Projects/odin-flickr-api/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20231216-81029-iwq9ia sitelibdir\=./.gem.20231216-81029-iwq9ia clean

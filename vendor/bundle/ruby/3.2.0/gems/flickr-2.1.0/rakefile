@@ -1,0 +1,35 @@
+require "bundler/gem_tasks"
+require "rake/clean"
+require "rdoc/task"
+require "rake/testtask"
+
+lib = File.expand_path('../lib/', __FILE__)
+$:.unshift lib unless $:.include?(lib)
+
+require 'flickr'
+require './flickr_rdoc'
+
+Rake::RDocTask.new do |rd|
+  rd.main = "README.rdoc"
+  rd.rdoc_files.include "README.rdoc", "lib/flickr.rb"
+end
+
+Rake::TestTask.new(:unit_tests) do |t|
+  t.description = "Run the unit tests"
+  t.libs        << "test/unit_tests"
+  t.pattern     = "test/unit_tests/*_test.rb"
+  t.warning     = true
+end
+
+Rake::TestTask.new(:integration_tests) do |t|
+  t.description = "Run the integration tests"
+  t.libs        << "test/integration_tests"
+  t.pattern     = "test/integration_tests/*_test.rb"
+  t.warning     = true
+end
+
+task :console do
+  exec "pry -I ./lib -r flickr"
+end
+
+task default: :unit_tests

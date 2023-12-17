@@ -1,6 +1,6 @@
 databases:
-  - name: odin-flickr-api
-    databaseName: odin-flickr-api
+  - name: odinflickrapi
+    databaseName: odinflickrapi
     user: jeffreyhaga
 
 services:
